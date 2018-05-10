@@ -1,102 +1,27 @@
 ---
-title: "Sharing your work"
-teaching: 30
-exercises: 0
+title: "Syncing local changes to GitHub"
+teaching: 20
+exercises: 10
 questions:
-- "What does `push` and `pull` mean?"
+- "What are repositories and how are they created?"
+- "What do `add` and `commit` mean?"
 objectives:
-- "create a repository on GitHub"
-- "link a local repository with a repository on GitHub"
-- "push changes from the local repository to GitHub"
-- "pull changes back from GitHub to the local repository"
+- "initiate a git repository"
+- "track changes to files in a project"
+- "persist changes to a git repository"
 keypoints:
-- "remote repositories on GitHub help you collaborate"
+- "Sometimes you want to work locally, and for that you need to clone your repository"
 - "`push` is a Git verb for sending changes from the local repository to a remote repository"
-- "`pull` is a Git verb for bringing changes from a remote repository to the local repository"
+
 ---
 
-## Create a repository on GitHub
+## Syncing local changes to GitHub
 
-When we have logged in to GitHub, we can create a new repository by clicking the **+** icon in the upper-right corner of
-any page then selecting **New repository**. Let's do this now.
+When we've added and committed to our heart's intent, it's time to put our changes on GitHub!
 
-* Create a new repository
-* Give it the name `hello-world`
+### Pushing changes
 
-GitHub will ask if you want to add a README.md, license or a `.gitignore` file. Do not do any of that for now.
-
-> ## Choosing a license
-> Choosing a license is an important part of openly sharing your creative work online. For help in wading through the
-> many types of open source licenses, please visit <https://choosealicense.com/>.
-{: .callout}
-
-## Connecting your local repository to the GitHub repository
-
-In the previous episode we created a local repository on our own computer.
-Now we have also created a remote repository on GitHub.
-But at this point, the two are completely isolated from each other.
-We want to link them together to synchronize them and share our project with the world.
-
-To do this, we need the GitHub repository URL, which should look something like this
-(with "some-librarian" replaced with your username):
-
-![The repository URL on GitHub](../fig/repository-url.png)
-
-If the URL starts with `git@` rather than `https://`, please click the "HTTPS" button to change it.
-
-> ## HTTPS vs. SSH
->
-> We use HTTPS here because it does not require additional configuration, which vary
-> from operating system to operating system. If you start using Git regularly, you would
-> like to set up SSH access, which is a bit more secure and convenient, by
-> following one of the great tutorials from
-> [GitHub](https://help.github.com/articles/generating-ssh-keys),
-> [Atlassian/BitBucket](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git)
-> and [GitLab](https://about.gitlab.com/2014/03/04/add-ssh-key-screencast/)
-> (this one has a screencast).
-{: .callout}
-
-Notice that GitHub is actually helpful enough to provide instructions for us
-so we don't have to remember these commands:
-
-![GitHub instructions](../fig/github-instructions.png)
-
-You can therefore choose to copy these and paste them on the command line.
-Or you can choose to type them out to get them into your fingers.
-I will do that. So we start with the command to link our local repository
-to the GitHub repository:
-
-~~~
-$ git remote add origin https://github.com/some-librarian/hello-world.git
-~~~
-{: .bash}
-
-where `some-librarian` should be replaced with your own username.
-
-> ## Why `origin`?
-> `origin` in the `git remote add` line is just a short name or alias we're giving to that big long repository URL.
-> It could be almost any string we want, but by convention in git, it is usually called `origin`, representing where
-> the repo originated.
-{: .callout}
-
-We can check that it is set up correctly with the command:
-
-~~~
-$ git remote -v
-~~~
-{: .bash}
-~~~
-origin  https://github.com/<your_github_username>/hello-world (fetch)
-origin  https://github.com/<your_github_username>/hello-world (push)
-~~~
-{: .output}
-
-## Pushing changes
-
-Now we have established a connection between the two repositories, but we still haven't
-synchronized their content, so the remote repository is still empty. To fix that, we
-will have to "push" our local changes to the GitHub repository. We do this using the
-`git push` command:
+We will have to "push" our local changes to the GitHub repository. We do this using the `git push` command:
 
 ~~~
 $ git push origin master

@@ -1,17 +1,17 @@
 ---
-title: "Getting started with git"
-teaching: 20
-exercises: 0
+title: "Bring your GitHub repository to your computer!"
+teaching: 30
+exercises: 20
 questions:
-- "What are repositories and how are they created?"
-- "What do `add` and `commit` mean?"
+- "What does `push` and `pull` mean?"
 objectives:
-- "initiate a git repository"
-- "track changes to files in a project"
-- "persist changes to a git repository"
+- "clone a repository on GitHub"
+- "push changes from the local repository to GitHub"
+- "pull changes back from GitHub to the local repository"
 keypoints:
-- "git repositories are data-structures used to track changes to files over time"
+- "`pull` is a Git verb for bringing changes from a remote repository to the local repository"
 - "Git uses a two-stage commit process. Changes must first be added to the staging area, then committed from there"
+
 ---
 
 ### Using Git
@@ -25,38 +25,20 @@ our own website.
 We will try to do this session as a group, but those who prefer to go at a slower pace can follow the instructions on 
 the [GitHub page](https://github.com/data-lessons/library-git).
 
+## Cloning a repository from GitHub
 
-### Creating a repository
+When we have logged in to GitHub, we can create a new repository by clicking the **+** icon in the upper-right corner of
+any page then selecting **New repository**. Let's do this now.
 
-A git **repository** is a data structure used to track changes to a set of project files over time. Repositories are 
-stored within the same directory as these project files, in a hidden directory called `.git`. We can create a new git 
-repository either by using GitHub's web interface, or via the command line. Let's use the command line to create a git 
-repository for the experiments that we're going to do today.
+* Create a new repository
+* Give it the name `hello-world`
 
-First, we will create a new directory for our project and enter that directory.
-<!explain commands as we go along>
+GitHub will ask if you want to add a README.md, license or a `.gitignore` file. Do not do any of that for now.
 
-~~~
-$ mkdir hello-world
-$ cd hello-world
-~~~
-{: .bash}
-
-We will now create an empty git repository to track changes to our project. To do this we will use the git **init** command, 
-which is simply short for *initialise*.
-
-~~~
-$ git init
-~~~
-{: .bash}
-
-The `hello-world` directory is now a git repository. 
-
-If we run the `ls` command now, the repository might seem empty, however, `ls -a` will show all hidden files, which 
-in this case includes the new hidden directory `.git`.
-
-Note that whenever we use git via the command line, we need to preface each command (or verb) with `git`, so that the computer knows 
-we are trying to get git to do something, rather than some other program.
+> ## Choosing a license
+> Choosing a license is an important part of openly sharing your creative work online. For help in wading through the
+> many types of open source licenses, please visit <https://choosealicense.com/>.
+{: .callout}
 
 ### Displaying the current project's status
 
@@ -201,8 +183,7 @@ The commit message is used to record a short, descriptive, and specific summary 
 If we just run `git commit` without the `-m` option, Git will launch nano (or whatever other editor we configured as `core.editor`)
 so that we can write a longer message.
 
-Having made a commit, we now have a permanent record of what was changed,
-along with metadata about who made the commit and at what time.
+Having made a commit, we now have a permanent record of what was changed, along with metadata about who made the commit and at what time.
 
 > ## Staging Area
 >
@@ -224,6 +205,4 @@ along with metadata about who made the commit and at what time.
 > than you would like!
 {: .callout}
 
-But at the moment our changes are only recorded locally, on our computer. If we wanted to 
-work collaboratively with someone else they would have no way of seeing what we've done.
-We will fix that in the next episode by using GitHub to share our work.
+But at the moment our changes are only recorded locally, on our computer. If we wanted to work collaboratively with someone else they would have no way of seeing what we've done.
