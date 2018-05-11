@@ -1,18 +1,25 @@
 ---
-title: "Bring your GitHub repository to your computer!"
+title: "Using git Locally and Syncing Changes"
 teaching: 30
 exercises: 20
 questions:
-- "What does `push` and `pull` mean?"
+- "What is a local and a remote repository?"
+- "How do I get a local copy of a GitHub repository?"
+- "How do I keep local and remote repositories synced up?"
 objectives:
-- "clone a repository on GitHub"
-- "push changes from the local repository to GitHub"
-- "pull changes back from GitHub to the local repository"
+- "Clone a repository on GitHub"
+- "Make changes locally to repository"
+- "Use push to sync up local changes to GitHub"
+- "Pull changes back from GitHub to the local repository"
 keypoints:
 - "`pull` is a Git verb for bringing changes from a remote repository to the local repository"
 - "Git uses a two-stage commit process. Changes must first be added to the staging area, then committed from there"
 
 ---
+
+- Clone the website GitHub repository they’ve been working on
+- Make change and commit, push commit
+- Make change and commit on remote repository, then pull? 
 
 ### Using Git
 

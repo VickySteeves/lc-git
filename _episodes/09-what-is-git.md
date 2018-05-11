@@ -14,6 +14,9 @@ keypoints:
 - "You can use GitHub for collaboration and open sourcing your work!"
 ---
 
+- Summary of content and terms
+- Include links to more reference material
+
 ### What is Version Control
 
 Version control is a name used for software which can help you record changes you make to the files in a directory on your computer. Version control software and tools (such as Git, SVN, and Mercurial) are often associated with software development. Increasingly, they can are being used for all kinds of files across research and academic collaborations. Version control systems work best with plain text files such as documents or computer code, but modern version control systems can be used to track changes in any type of file.

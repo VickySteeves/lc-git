@@ -1,5 +1,5 @@
 ---
-title: "Syncing local changes to GitHub"
+title: "move push material into lesson 7"
 teaching: 20
 exercises: 10
 questions:
@@ -14,6 +14,8 @@ keypoints:
 - "`push` is a Git verb for sending changes from the local repository to a remote repository"
 
 ---
+
+- This material will be folded into previous lesson
 
 ## Syncing local changes to GitHub
 

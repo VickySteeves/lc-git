@@ -1,5 +1,5 @@
 ---
-title: "Collorbating on GitHub"
+title: "Collaborating on GitHub"
 teaching: 20
 exercises: 20
 questions:
@@ -15,5 +15,11 @@ keypoints:
 ---
 
 ## How to collaborate on GitHub
+
+- Look at example repository with a bunch of contributors
+- Suggest changes to repositories that aren’t yours
+- Fork a repository to make copy for self
+- Make a change
+- Submit a pull request
 
 ### Collaborators vs Contributors vs Maintainers

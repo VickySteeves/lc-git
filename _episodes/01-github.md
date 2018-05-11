@@ -5,11 +5,13 @@ exercises: 20
 questions:
 - "What is GitHub?"
 - "How do I create a GitHub repository?"
+- "How do I track changes to files in my repository?"
 objectives:
 - "Understand GitHub"
 - "Learn how to make a new repository on GitHub"
+- "Learn how to add a file and make a commit"
 keypoints:
-- "GitHub is really useful for collaboration"
+- "GitHub is really useful for storing files associated with a project and keeping record of changes to those files"
 ---
 
 ## GitHub

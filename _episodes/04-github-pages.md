@@ -4,11 +4,11 @@ teaching: 15
 exercises: 20
 questions:
 - "What is GitHub Pages?"
+- "How can I create a website using GitHub?"
 objectives:
-- "set up a website using Github Pages"
-- "share work and collaborate using GitHub"
+- "Set up a website using Github Pages"
 keypoints:
-- "GitHub Pages use the Git/GitHub workflow to help you build webpages"
+- "GitHub Pages can be used to create and track changes to a website"
 ---
 ## GitHub Pages
 

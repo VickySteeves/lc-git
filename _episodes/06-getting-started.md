@@ -1,14 +1,18 @@
 ---
-title: "Setting git up"
+title: "Setting git Up"
 teaching: 10
 exercises: 0
 questions:
-- "How do I set `git` up?"
+- "What is git and how is it different than GitHub?"
+- "How do I set up git on my computer?"
 objectives:
-- "Configure `git` for the first time on your machine"
-keypoints:
-- "You cannot use `git` without telling it your name and email address"
+- "Understand what git is"
+- "Set up git on computer"
 ---
+
+- Define git
+- Explain how it interacts with GitHub
+- Motivation for using git
 
 ### Using Git
 
