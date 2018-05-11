@@ -46,24 +46,3 @@ The few most important factors of version control are:
 * **Rolling Back** - Version control allows us to quickly undo a set of changes. This can be useful when new writing or new additions to code introduce problems. Since all old versions of files are saved, it's always possible to go back in time to see exactly who wrote what on a particular day.
 * **Understanding** - Version control can help you understand how the code or writing came to be, who wrote or contributed particular parts, and who you might ask to help understand it better. As we have this record of who made what changes when, we know who to ask if we have questions later on, and, if needed, revert to a previous version, much like the “undo” feature in an editor.
 * **Backup** - While not meant to be a backup solution, using version control systems mean that your code and writing can be stored on multiple other computers. Nothing that is committed to version control is ever lost, unless you work really, really hard at it.
-
-### Uses in a Library Context
-
-Teams are not the only ones to benefit from version control: lone librarians can benefit immensely. Version control is much like provenance - you know which changes came from who, and when. Future you will be pleased there's a record of events to come back too. There are many examples of information professionals using git in their everyday work to make sure they have a record of changes. Consider these common library world scenarios!
-
-#### Scenario 1: Local librarian looking to start a crowdsourcing project
-
-A local librarian is looking to put thousands of historical photographs of the area online so that the community can help identify the people and places they depict. She combs the web for examples of existing crowdsourcing projects, and even though they all appear unique to each institution, she notices quite a few seem to have almost the exact same functionality and structure. Rather than build a whole new version from scratch herself, she wishes there was a way to just copy the code of an existing one, and modify it to reflect her project. She notices the GitHub icon at the bottom of one of the projects she likes, but clicking on the link just brings her to a confusing directory of files and oddly labeled buttons such as "Fork".  
-
-> GitHub hosts open-licensed projects ... and allows any user to fork any public project. By clicking the "fork" button, any GitHub user can almost instantaneously create their own version of an existing project. That "forked" project can be used as the basis for a new project, or can be used to work out new features that can be merged back into the original. (From: [GitHub for Academics](http://www.digitalpedagogylab.com/hybridped/push-pull-fork-github-for-academics/) )
-
-#### Scenario 2: Multiple librarians editing metadata for a collection
-
-A librarian has exported a spreadsheet of metadata from a repository for cleaning and editing. She's working with a group of librarians and students, so they need to make sure edits don't conflict. They also need to be able to undo any edits and preserve the original metadata. Once edits are complete, the whole group wants to review the changes before re-ingesting the spreadsheet of metadata into the repository.
-
-The team can choose to use Git by itself to track changes and resolve conflicts or they can choose to use GitHub to host the project so that users can collaborate and review changes on the Web. Git will preserve the original metadata as well as all edits. GitHub will facilitate discussion about what changes should be made, who should make them, and why.
-
-> A great example of this is in the geoblacklight community. You can browse the GitHub organization, click on a repository (which corresponds to an institution) and view their metadata and its' change over time: [github.com/OpenGeoMetadata](https://github.com/OpenGeoMetadata).
-
-#### Scenario 3: GitHub, small teams, and DAMs
-You manage a small library that used GitHub to clone certain aspects of your digital asset management system using a larger library's system. However, a few months later, you realized there were certain glitches that you wanted to address. Using git will allow you to trace back to what went wrong and when (since all edits are recorded). Since git keeps all changes, you can also trace the initial creator of the digital asset management system that you created and reach out to them for feedback.
